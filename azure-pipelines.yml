@@ -14,7 +14,7 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
-    publishJUnitResults: true
+    #publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     codeCoverageToolOption: 'JaCoCo'
@@ -23,7 +23,7 @@ steps:
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
-    sonarQubeRunAnalysis: true
+    #sonarQubeRunAnalysis: true
     sqMavenPluginVersionChoice: 'latest'
 - task: CopyFiles@2
   inputs:
